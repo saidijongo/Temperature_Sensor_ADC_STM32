@@ -1,5 +1,5 @@
 # Temperature_Sensor_ADC_STM32
-Using Steinhart-Hart Equation and STM32 MCU ADCs to read temps
+Using Temp sensors with Steinhart-Hart Equation in the STM32 MCU ADCs to read temps
 
 ![image](https://github.com/user-attachments/assets/75f4026d-0fdd-476d-988a-1bb83bd6b71e)
 ![image](https://github.com/user-attachments/assets/927efe77-c0aa-4f91-92a8-db92f59050dc)
