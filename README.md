@@ -9,4 +9,7 @@ Using Temp sensors with Steinhart-Hart Equation in the STM32 MCU ADCs to read te
 ![image](https://github.com/user-attachments/assets/5d34522a-5431-4b05-a791-0b681519c213)
 ![image](https://github.com/user-attachments/assets/8fbdbee4-ea88-4d02-82cd-24af713802f7)
 
+![image](https://github.com/user-attachments/assets/7239341c-5af5-48d2-9a6e-d8ed97197fb3)
+
+
 
