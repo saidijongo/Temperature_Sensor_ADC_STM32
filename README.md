@@ -1,4 +1,4 @@
-# Temperature_Sensor_ADC_STM32
+# Temperature_Sensor_ADC_STM32 Nucleo board
 Using Temp sensors with Steinhart-Hart Equation in the STM32 MCU ADCs to read temps
 
 ![image](https://github.com/user-attachments/assets/75f4026d-0fdd-476d-988a-1bb83bd6b71e)
