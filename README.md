@@ -13,3 +13,9 @@ Using Temp sensors with Steinhart-Hart Equation in the STM32 MCU ADCs to read te
 
 
 
+Battery ADC
+https://github.com/OpenSourceEBike/BMSBattery_S_controllers_firmware [BMS]
+https://github.com/OpenSourceEBike/BMSBattery_S_controllers_firmware/blob/master/firmware/adc.c
+
+
+
