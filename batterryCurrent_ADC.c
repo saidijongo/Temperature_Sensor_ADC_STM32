@@ -2,10 +2,11 @@
 #include "adc.h"
 #include "gpio.h"
 
-#define R_SHUNT 0.01f       // Shunt resistor value in ohms
-#define ADC_MAX_VOLTAGE 3.3f // Reference voltage for ADC
-#define ADC_RESOLUTION 4096  // 12-bit ADC resolution
-#define OVERCURRENT_THRESHOLD 25.0f  // Overcurrent threshold in Amps
+#define SHUNT_RESISTANCE 0.007f         // Shunt resistor value in ohms
+#define AMPLIFIER_GAIN 20.0f            // Gain of the current sense amplifier
+#define ADC_MAX_VOLTAGE 3.3f            // Reference voltage for ADC
+#define ADC_RESOLUTION 4096             // 12-bit ADC resolution
+#define OVERCURRENT_THRESHOLD 25.0f     // Overcurrent threshold in Amps
 
 void SystemClock_Config(void);
 float read_battery_current(void);
@@ -41,7 +42,7 @@ int main(void)
 float read_battery_current(void)
 {
     uint32_t adc_value = 0;
-    float shunt_voltage, battery_current;
+    float amplified_voltage, shunt_voltage, battery_current;
 
     // Start ADC Conversion
     HAL_ADC_Start(&hadc1);
@@ -57,10 +58,13 @@ float read_battery_current(void)
     HAL_ADC_Stop(&hadc1);
 
     // Convert ADC value to voltage
-    shunt_voltage = (adc_value * ADC_MAX_VOLTAGE) / ADC_RESOLUTION;
+    amplified_voltage = (adc_value * ADC_MAX_VOLTAGE) / ADC_RESOLUTION;
+
+    // Calculate the voltage across the shunt resistor
+    shunt_voltage = amplified_voltage / AMPLIFIER_GAIN;
 
     // Calculate current using Ohm's law (I = V / R)
-    battery_current = shunt_voltage / R_SHUNT;
+    battery_current = shunt_voltage / SHUNT_RESISTANCE;
 
     return battery_current;
 }
