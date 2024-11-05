@@ -18,5 +18,8 @@ https://github.com/OpenSourceEBike/BMSBattery_S_controllers_firmware [BMS]
 https://github.com/OpenSourceEBike/BMSBattery_S_controllers_firmware/blob/master/firmware/adc.c
 https://github.com/OpenSourceEBike/TSDZ2_wiki/wiki [GENERAL EBIKE LINKS]
 
+Batt Voltage ADC STM32
+https://vivonomicon.com/2019/10/15/reading-battery-voltage-with-the-stm32s-adc/
+
 
 
