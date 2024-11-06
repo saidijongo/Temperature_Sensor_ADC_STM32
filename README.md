@@ -21,5 +21,8 @@ https://github.com/OpenSourceEBike/TSDZ2_wiki/wiki [GENERAL EBIKE LINKS]
 Batt Voltage ADC STM32
 https://vivonomicon.com/2019/10/15/reading-battery-voltage-with-the-stm32s-adc/
 
+power latch
+https://randomnerdtutorials.com/latching-power-switch-circuit-auto-power-off-circuit-esp32-esp8266-arduino/
+
 
 
